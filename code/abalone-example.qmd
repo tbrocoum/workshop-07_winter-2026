@@ -55,11 +55,11 @@ Don't forget to look at your data! Use `View(abalone_clean)` in the _Console_.
 ## c. Exploratory data visualization
 
 ```{r abalone-scatterplot}
-# 
-ggplot(data = abalone_clean, # 
-       aes(x = mean_ph, # 
-           y = change_in_area)) 
-  # 
+# base layer of gg plot call
+ggplot(data = abalone_clean, # data set clean
+       aes(x = mean_ph, # x axis is predictor, y is response
+           y = change_in_area)) +
+  # first layer points 
   geom_point(size = 4,
              stroke = 1,
              fill = "firebrick4",
@@ -68,7 +68,7 @@ ggplot(data = abalone_clean, #
 
 Where does the missing value come from?  
 
-**insert response here**  
+**Tank B1B where pH censor failed**  
 
 Don't forget to turn your warnings off either in the individual code chunk or in the YAML at the top of the file.
 
