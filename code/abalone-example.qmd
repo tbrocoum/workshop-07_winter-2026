@@ -132,15 +132,17 @@ Look at the column names using `colnames(abalone_preds)` in the Console.
 
 What are the column names?  
 
-**insert your notes here**  
-
+**x: predictor variable values (ph)** 
+**Predicted:model predictions for change in shell surface area per day**
+**std error: standard error, precision of the prediction**
+**conflow and confhigh: range for the 95% CI around moel predictions**
 Look at the actual object (by clicking on it in Environment).  
 
 Look at the class of the object using `class(abalone_preds)` in the Console.  
 
 What is this type of object?  
 
-**insert your notes here**  
+**ggeffects output object and data frame **  
 
 View `abalone_preds` like a data frame. 
 
